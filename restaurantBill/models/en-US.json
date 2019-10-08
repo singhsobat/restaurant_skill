@@ -1,0 +1,89 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "restaurant skill",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "noteOrderIntent",
+          "slots": [
+            {
+              "name": "quantity",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "item",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "make {quantity} {item} for me",
+            "order {quantity} {item}"
+          ]
+        },
+        {
+          "name": "billIntent",
+          "slots": [],
+          "samples": [
+            "bill"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "dosa",
+                "synonyms": [
+                  "dosas"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "parantha",
+                "synonyms": [
+                  "paranthas"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "samosa",
+                "synonyms": [
+                  "samosa"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "idli",
+                "synonyms": [
+                  "idlis"
+                ]
+              }
+            }
+          ],
+          "name": "AMAZON.FirstName"
+        }
+      ]
+    }
+  },
+  "version": "7"
+}

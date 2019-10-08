@@ -1,0 +1,19 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:222405268794:function:serverlessrepo-restaurant-alexaskillskitnodejsfact-13ADWWJKAC2RP"
+        },
+        "interfaces": []
+      }
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "restaurantBill"
+        }
+      }
+    }
+  }
+}
